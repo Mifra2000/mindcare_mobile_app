@@ -68,7 +68,9 @@ const PostComments = ({ route }) => {
               </View>
             </View>
 
-            <Text variant="titleLarge">{post.title}</Text>
+            <Text variant="titleLarge" style={{ fontWeight: "bold" }}>
+              {post.title}
+            </Text>
             <Text style={styles.bodyText}>
               {isReadMore ? post.body : post.body}
               {post.body.length > 300 && (

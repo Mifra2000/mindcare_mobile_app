@@ -255,82 +255,82 @@ const SetReminderScreen = ({ route, navigation }) => {
       {renderCardRow(3, 6)}
 
       {/* <View>
-        <View style={styles.cardContainer}>
-          <TouchableOpacity
-            onPress={() => {
-              handleCardPress("After getting out of bed");
-              setActive(!active);
-            }}
-          >
-            <SetReminderCard
-              isActive={active}
-              setActive={setActive}
-              title="After getting out of bed"
-              image="https://firebasestorage.googleapis.com/v0/b/mindcare-691a2.appspot.com/o/set-reminder-images%2Fsunrise.png?alt=media&token=5c7f0513-2b3d-4157-9573-3b534c649798"
-            />
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => {
-              handleCardPress("After Breakfast");
-              setActive(!active);
-            }}
-          >
-            <SetReminderCard
-              isActive={active}
-              title="After Breakfast"
-              image="https://firebasestorage.googleapis.com/v0/b/mindcare-691a2.appspot.com/o/set-reminder-images%2Fbreakfast.png?alt=media&token=48a93895-1232-4b66-8a1c-a5d28633fd3e"
-            />
-          </TouchableOpacity>
+      <View style={styles.cardContainer}>
+        <TouchableOpacity
+          onPress={() => {
+            handleCardPress("After getting out of bed");
+            setActive(!active);
+          }}
+        >
+          <SetReminderCard
+            isActive={active}
+            setActive={setActive}
+            title="After getting out of bed"
+            image="https://firebasestorage.googleapis.com/v0/b/mindcare-691a2.appspot.com/o/set-reminder-images%2Fsunrise.png?alt=media&token=5c7f0513-2b3d-4157-9573-3b534c649798"
+          />
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            handleCardPress("After Breakfast");
+            setActive(!active);
+          }}
+        >
+          <SetReminderCard
+            isActive={active}
+            title="After Breakfast"
+            image="https://firebasestorage.googleapis.com/v0/b/mindcare-691a2.appspot.com/o/set-reminder-images%2Fbreakfast.png?alt=media&token=48a93895-1232-4b66-8a1c-a5d28633fd3e"
+          />
+        </TouchableOpacity>
 
-          <TouchableOpacity
-            onPress={() => {
-              handleCardPress("Having Lunch/Dinner");
-              setActive(!active);
-            }}
-          >
-            <SetReminderCard
-              isActive={active}
-              title="Having Lunch/Dinner"
-              image="https://firebasestorage.googleapis.com/v0/b/mindcare-691a2.appspot.com/o/set-reminder-images%2Flunch-time.png?alt=media&token=e79c7049-41dd-4cf6-87da-a154ec52cca9"
-            />
-          </TouchableOpacity>
-        </View>
+        <TouchableOpacity
+          onPress={() => {
+            handleCardPress("Having Lunch/Dinner");
+            setActive(!active);
+          }}
+        >
+          <SetReminderCard
+            isActive={active}
+            title="Having Lunch/Dinner"
+            image="https://firebasestorage.googleapis.com/v0/b/mindcare-691a2.appspot.com/o/set-reminder-images%2Flunch-time.png?alt=media&token=e79c7049-41dd-4cf6-87da-a154ec52cca9"
+          />
+        </TouchableOpacity>
+      </View>
 
-        <View style={styles.cardContainer}>
-          <TouchableOpacity
-            onPress={() => {
-              handleCardPress("After Work");
-              setActive(!active);
-            }}
-          >
-            <SetReminderCard
-              isActive={active}
-              title="After Work"
-              image="https://firebasestorage.googleapis.com/v0/b/mindcare-691a2.appspot.com/o/set-reminder-images%2Fhard-work.png?alt=media&token=8c98b4d8-ba62-4550-adf4-8bdf999d4a41"
-            />
-          </TouchableOpacity>
+      <View style={styles.cardContainer}>
+        <TouchableOpacity
+          onPress={() => {
+            handleCardPress("After Work");
+            setActive(!active);
+          }}
+        >
+          <SetReminderCard
+            isActive={active}
+            title="After Work"
+            image="https://firebasestorage.googleapis.com/v0/b/mindcare-691a2.appspot.com/o/set-reminder-images%2Fhard-work.png?alt=media&token=8c98b4d8-ba62-4550-adf4-8bdf999d4a41"
+          />
+        </TouchableOpacity>
 
-          <TouchableOpacity
-            onPress={() => {
-              handleCardPress("Before Bed");
-              setActive(!active);
-            }}
-          >
-            <SetReminderCard
-              title="Before Bed"
-              image="https://firebasestorage.googleapis.com/v0/b/mindcare-691a2.appspot.com/o/set-reminder-images%2Fmoon.png?alt=media&token=da54b17a-0516-48bd-a038-6c40bea4e50d"
-            />
-          </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            handleCardPress("Before Bed");
+            setActive(!active);
+          }}
+        >
+          <SetReminderCard
+            title="Before Bed"
+            image="https://firebasestorage.googleapis.com/v0/b/mindcare-691a2.appspot.com/o/set-reminder-images%2Fmoon.png?alt=media&token=da54b17a-0516-48bd-a038-6c40bea4e50d"
+          />
+        </TouchableOpacity>
 
-          <TouchableOpacity onPress={toggleBottomNavigationView}>
-            <SetReminderCard
-              isActive={active}
-              title="Add your own"
-              image="https://firebasestorage.googleapis.com/v0/b/mindcare-691a2.appspot.com/o/set-reminder-images%2Fadd%20task.png?alt=media&token=2c903988-589b-40c8-be7e-579b8586018a"
-            />
-          </TouchableOpacity>
-        </View>
-      </View> */}
+        <TouchableOpacity onPress={toggleBottomNavigationView}>
+          <SetReminderCard
+            isActive={active}
+            title="Add your own"
+            image="https://firebasestorage.googleapis.com/v0/b/mindcare-691a2.appspot.com/o/set-reminder-images%2Fadd%20task.png?alt=media&token=2c903988-589b-40c8-be7e-579b8586018a"
+          />
+        </TouchableOpacity>
+      </View>
+    </View> */}
 
       <View>
         <View
@@ -396,10 +396,10 @@ const SetReminderScreen = ({ route, navigation }) => {
         </View>
       )}
       {/* <Button
-        onPress={toggleBottomNavigationView}
-        //on Press of the button bottom sheet will be visible
-        title="Show Bottom Sheet"
-      /> */}
+      onPress={toggleBottomNavigationView}
+      //on Press of the button bottom sheet will be visible
+      title="Show Bottom Sheet"
+    /> */}
 
       <BottomSheet
         visible={visible}

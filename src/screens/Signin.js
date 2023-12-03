@@ -11,7 +11,7 @@ import {
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import React from "react";
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { TextInput, Checkbox, Button } from "react-native-paper";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Formik } from "formik";
@@ -19,8 +19,25 @@ import * as yup from "yup";
 import color from "../constants/colors";
 const splashImage = require("../../assets/images/splash.png");
 import useStore from "../screens/zustand/store";
+import * as Analytics from "expo-firebase-analytics";
 
 const Signin = ({ navigation }) => {
+  useEffect(() => {
+    // Log a screen view event
+    const logScreenView = async () => {
+      console.log("inside useEffect");
+      await Analytics.logEvent("share", {
+        contentType: "text",
+        itemId: "Expo rocks!",
+        method: "facebook",
+      });
+    };
+
+    logScreenView();
+  }, []); // Empty dependency array means this effect runs once after the initial render
+
+  // ... rest of your component
+
   const { setResponseData } = useStore();
   const [checked, setChecked] = useState(false);
   const [secureTextEntry, setSecureTextEntry] = useState(true);
